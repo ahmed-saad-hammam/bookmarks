@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="download.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+
+
+    <div class="container py-5 text-center">
+
+
+      <h1>Bookmarker</h1>
+      <hr>
+      <h2>Bookmark your favorite sites</h2>
+      <hr>
+
+      <div class="form-group my-3">
+        <label for="SiteNameInput"> Site Name</label>
+        <input
+          class="form-control"
+          type="text"
+          id="SiteNameInput"
+          placeholder="Bookmark Name"
+        />
+      </div>
+
+      <div class="form-group my-3">
+        <label for="SiteUrlInput"> Site URL</label>
+        <input
+          class="form-control"
+          type="url"
+          id="SiteUrlInput"
+          placeholder="Website URL"
+        />
+      </div>
+
+      <button
+        onclick="addWebsite()"
+        id="addbtn"
+        class="btn btn-danger btn-outline-warning my-5 m-auto px-5"
+      >
+        submit
+      </button>
+
+      <table class="table">
+        <thead>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="tableBody">
+          <!-- <tr>
+            <td>1</td>
+            <td>kooora</td>
+            <td><button class="btn btn-success">visit</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
